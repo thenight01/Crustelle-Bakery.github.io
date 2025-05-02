@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>My Page!</title>
+    <style>
+      /*BODY*/
+        body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+}
+body {
+        background: rgb(0, 0, 0);
+        margin: 2px;
+        width: 100%;
+    }
+    /*LI*/
+li {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  border-radius: 3px;
+  padding: 2px;
+  margin-left: 20px;
+}
+li:hover {
+  background-color: rgb(198, 245, 245);
+  
+}
+li:first-child {
+  margin-left: 0px;
+}
+/*A&H1*/
+a {
+  text-decoration: none;
+}
+
+
+    h1 {
+        background: rgb(0, 0, 0);
+    }
+    
+    
+    /*HEADER*/
+    header {
+      text-align: center;
+      background-image: url("pic/bann.png");
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: black;
+      height: 400px;
+    }
+    header .mobile {
+      display: none;
+
+    }
+    header .logo a {
+      background-image: url("pic/goodlogo.png");
+     background-size: 300px;
+      background-repeat: no-repeat;
+      width: 300px;
+      color: white;
+      display: inline-block;
+      height: 80px;
+      text-indent: -99999999px;
+    }
+    /*NAV*/
+    nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+    nav li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    /*RESPONSIVE RULES*/
+      @media screen and (max-width: 715px) {
+        header {
+          height: 250px;
+          background-position: 0 -30px;
+        }
+        header .mobile {
+          display: inline-block;
+        }
+        header .desktop {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        header {
+          height: 200px;
+          background-position: 0 -0px;
+        }
+        @media (max-width: 768px) {
+        }
+      }
+    /*FEATURE*/
+    .feature {
+      background-color: white;
+      color: rgb(73, 73, 73);
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .feature figure {
+      color: black;
+      text-align: center;
+      text-transform: uppercase;
+      margin: auto;
+      width: 100px;
+    }
+    .feature figure img {
+      border: 1px solid white;
+      box-shadow: gray 0px 0px 10px;
+      border-radius: 50%;
+      width: 200px;
+    }
+
+    /*FOOTER*/
+    footer {
+      background: black;
+      color: gray;
+      font-size: 12px;
+      padding: 20px 20px;
+      text-align: center;
+    }
+   
+    </style>
+    </head>
+  
+     <body>
+      <header>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li class="mobile"><a href="locations.html">Locations</a></li>
+              <li class="mobile"><a href="contact.html">Contact</a></li>
+              <li class="logo"> <a hert="index.html">Crustelle Bakery Logo</li>
+                <li class="desktop"><a href="locations.html">Locations</a></li>
+              <li class="desktop"><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+      </header>
+       
+          <section class="feature">
+
+            <figure>
+              <img src="pic/bluebarry.png"  alt="Blueberrycake">
+              <figcaption>Blueberrycake</figcaption>
+            </figure>
+            <figure>
+              <img src="pic/caramel.png" alt="Caramel cake">
+              <figcaption>Caramel cake</figcaption>
+            </figure>
+            <figure>
+              <img src="pic/icebox.png" alt="Icebox cake">
+              <figcaption>Icebox cake</figcaption>
+             </figure>
+          </section>
+            <footer>123 Main Street Edwardsvill,IL • 555-555-5555 • us@me.com<footer>
+
+     </body>
+
+</html>
